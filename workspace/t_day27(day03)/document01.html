@@ -1,0 +1,22 @@
+<!-- 9번 : DOM1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementById</title>
+</head>
+<body>
+  <div id="myDiv">div 요소</div>
+  <p></p>
+</body>
+<script>
+  const myDiv = document.getElementById("myDiv");
+  console.log(myDiv, typeof myDiv);
+  const p1 = document.querySelector("p");
+  console.log(p1, typeof p1);
+  p1.innerText = myDiv.textContent;
+</script>
+</html>
+<!-- 스크립트 태그가 제일 마지막에 오는게 좋다
+ 브라우저가 코드를 해석할때 스크립트 태그 오류는 눈에 보이지 않기 때문에 -->

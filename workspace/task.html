@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task</title>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+.head-container{
+height: 100px;
+color: white;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+text-align: center;
+/* align-items: center; */
+justify-content: space-between;
+}
+.home--text-box{
+  display: flex;
+  margin: 0 10px;
+  line-height: 50px;
+
+}
+.header--text-box{
+  height: 50px;
+}
+nav{
+    display: flex;
+    height: 50px;
+    background-color: blue;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.menu::after{
+  display: block; 
+  content: ''; 
+  clear:both;
+}
+.menu > li{
+position: relative;
+float: left;
+margin: 0 10px;
+line-height: 50px;
+}
+.menu > li > a{display: block; padding: 0 15px; line-height: 50px; color: #fff;}
+.menu > li:hover .depth_1{display:block;}
+.menu .depth_1{display: none; position: absolute; left: 0; right: 0;text-align: center;}
+.menu .depth_1 a{display: block; padding: 5px; color: #fff; background-color: blueviolet;}
+ul{
+  /* display: flex; */
+  list-style: none;
+}
+
+
+</style>
+
+</head>
+<body>
+  <header class="head-container">
+  <div class="header--text-box">header</div>
+    <nav>
+      <ul class="menu">
+
+        <li>
+          <a href="#">Menu1</a>
+          <ul class="depth_1">
+            <li><a href="#">Menu1-1</a></li>
+            <li><a href="#">Menu1-2</a></li>
+            <li><a href="#">Menu1-3</a></li>
+            <li><a href="#">Menu1-4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Munu2 </a>
+          <ul class="depth_1">
+            <li><a href="#">Menu2-1</a></li>
+            <li><a href="#">Menu2-2</a></li>
+            <li><a href="#">Menu2-3</a></li>
+            <li><a href="#">Menu2-4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Menu3</a>
+          <ul class="depth_1">
+            <li><a href="#">Menu3-1</a></li>
+            <li><a href="#">Menu3-2</a></li>
+            <li><a href="#">Menu3-3</a></li>
+          </ul>
+        </li>
+        <li>Menu4</li>
+      </ul>
+       <div class="home--text- box">home</div>
+    </nav>
+   
+  </header> 
+</body>
+</html>
