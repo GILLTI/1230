@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  button{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+</style>
+
+</head>
+<body>
+  <button id="button1">Click</button>
+  <button id="button2">Click</button>
+  <button id="button3">Click</button>
+  <button id="button4">Click</button>
+
+</body>
+<script>
+  // 각 버튼마다 클릭이벤트 주기(배경 색상 자유롭게 변경)
+  // 각 버튼을 클릭했을 때마다 몇번 클릭했는지 콘솔창에 입력되도록하기
+const boxButton1 = document.querySelector("#button1");
+const boxButton2 = document.querySelector("#button2");
+const boxButton3 = document.querySelector("#button3");
+const boxButton4 = document.querySelector("#button4");
+
+console.log(boxButton1);
+console.log(boxButton2);
+console.log(boxButton3);
+console.log(boxButton4);
+
+function changeBgRed(){
+  boxButton1.setAttribute("style", "background-color:red");
+  console.log(this);
+  this.setAttribute("style", "background-color:red");
+}
+boxButton1.addEventListener("button1",changeBgRed );
+
+boxButton2.addEventListener("mouseover",function(){
+  this.setAttribute("style", "background-color:red");
+  console.log(this)
+});
+
+function changeBgColor(){
+  this.setAttribute("style", "background-color:random");
+  console.log(this);
+}
+boxButton3.addEventListener("mouseover", changeBgColor);
+boxButton3.addEventListener("mouseout", changeBgColor);
+
+
+</script>
+
+</html>

@@ -221,3 +221,7 @@ day27
 		지정한 클래스 이름을 가진 모든 요소를 선택
 	document.getElementsByTagName("tag명");
 		지정한 태그 이름을 가진 모든 요소를 선택
+
+http 컬렉션 실시간ㅇ for each 사용 x
+
+실시간 x 유사 배열 foreach 사용 ㅇ
