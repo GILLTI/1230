@@ -14,8 +14,10 @@ for(let i = 0; i < testImg.length; i++){
     bigImg.setAttribute("src", src);
     bigImgWrap[0].style.display = "flex";
   });
+//  클릭하면 사진커지는 이벤트
 
   bigImgWrap[0].addEventListener("click", function(){
     this.style.display = "none";
   });
+  // 클릭하면 꺼지는 이벤트
 }
